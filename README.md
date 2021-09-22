@@ -15,7 +15,7 @@ npm install
 To change the sass script or add any other scripts you can do it by going to package.json file -> scripts:
 this is the script used in this project 
 ```sh
-"sass": "node-sass sass/main.scss main.css -watch"
+"sass": "node-sass sass/main.scss main.css -watch
 ```
 > the name of the script: node modules used (node-sass) the original sass file the css file to compile in the watch instraction
 
