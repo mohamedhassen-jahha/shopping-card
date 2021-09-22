@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
+/* line 2, sass/global/gd.scss */
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif; }
+
+/* line 7, sass/global/gd.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+/* line 14, sass/global/gd.scss */
+body {
+  padding: 5.5rem 0; }
+
+/* line 18, sass/global/gd.scss */
+.red {
+  fill: #830b0b !important; }
+
+/* line 1, sass/comp/nav/nav.scss */
+.headerNav {
+  width: 100%;
+  padding: 1.5rem 10%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 0px 55px -28px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99; }
+  /* line 12, sass/comp/nav/nav.scss */
+  .headerNav img {
+    height: 20px;
+    align-self: center; }
+  /* line 16, sass/comp/nav/nav.scss */
+  .headerNav__search {
+    min-width: fit-content;
+    width: 40%;
+    display: flex; }
+    /* line 20, sass/comp/nav/nav.scss */
+    .headerNav__search input {
+      padding: 0.6rem 10px;
+      width: 80%;
+      border-radius: 0.5rem 0 0 0.5rem;
+      border: 0.1rem solid #DBDBDB;
+      border-right: 0;
+      color: #acaaaa; }
+    /* line 28, sass/comp/nav/nav.scss */
+    .headerNav__search a {
+      display: flex;
+      width: 20%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0.5rem 0.5rem 0;
+      background-color: #F49719;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem; }
+  /* line 40, sass/comp/nav/nav.scss */
+  .headerNav__user {
+    position: relative;
+    width: auto;
+    display: flex; }
+    /* line 44, sass/comp/nav/nav.scss */
+    .headerNav__user svg {
+      height: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+      /* line 49, sass/comp/nav/nav.scss */
+      .headerNav__user svg path {
+        fill: #066381; }
+    /* line 53, sass/comp/nav/nav.scss */
+    .headerNav__user--name {
+      text-align: right;
+      font-size: 1.2rem;
+      width: 50%;
+      margin: 0 10px 0 10px;
+      color: #066381;
+      font-size: 300; }
+    /* line 61, sass/comp/nav/nav.scss */
+    .headerNav__user--tag {
+      background-color: #F49719;
+      width: 30px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; }
+
+/* line 1, sass/comp/main/checklist/checklist.scss */
+.Main__ckeck {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px; }
+  /* line 7, sass/comp/main/checklist/checklist.scss */
+  .Main__ckeck--box {
+    width: 25rem;
+    height: 30rem;
+    padding: 1.2rem 2rem;
+    border-radius: 1.2rem;
+    background-color: #f2f2f280;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.22);
+    position: fixed;
+    top: 20rem; }
+    /* line 16, sass/comp/main/checklist/checklist.scss */
+    .Main__ckeck--box h3 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 2rem 0;
+      color: #06607f;
+      text-transform: uppercase;
+      font-size: 1.8rem; }
+    /* line 25, sass/comp/main/checklist/checklist.scss */
+    .Main__ckeck--box-info {
+      width: 100%;
+      padding: 2rem;
+      border-bottom: 2px dotted #066381; }
+      /* line 30, sass/comp/main/checklist/checklist.scss */
+      .Main__ckeck--box-info h4 {
+        color: #066381;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 0.2rem; }
+        /* line 35, sass/comp/main/checklist/checklist.scss */
+        .Main__ckeck--box-info h4 span {
+          color: #F49719; }
+        /* line 38, sass/comp/main/checklist/checklist.scss */
+        .Main__ckeck--box-info h4 span:first-child {
+          padding-bottom: 10px; }
+      /* line 42, sass/comp/main/checklist/checklist.scss */
+      .Main__ckeck--box-info h4:first-child {
+        padding-bottom: 10px; }
+    /* line 46, sass/comp/main/checklist/checklist.scss */
+    .Main__ckeck--box h5 {
+      padding: 2rem;
+      color: #066381;
+      font-size: 1.5rem;
+      text-transform: uppercase; }
+      /* line 51, sass/comp/main/checklist/checklist.scss */
+      .Main__ckeck--box h5 span {
+        color: #F49719;
+        padding-top: 0.5rem; }
+    /* line 56, sass/comp/main/checklist/checklist.scss */
+    .Main__ckeck--box a {
+      display: block;
+      padding: 1rem 2rem;
+      background-color: #F49719;
+      border-radius: 1.5rem;
+      width: 90%;
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 500; }
+
+/* line 1, sass/comp/main/panier/panier.scss */
+.panier {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  padding: 1.5rem 10%; }
+
+/* line 1, sass/comp/main/article/article.scss */
+.articles {
+  width: 75%;
+  height: 100%;
+  color: #626262; }
+  /* line 5, sass/comp/main/article/article.scss */
+  .articles h1 {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: #066381;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #066381; }
+  /* line 13, sass/comp/main/article/article.scss */
+  .articles h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0.5rem; }
+
+/* line 25, sass/comp/main/article/article.scss */
+.Main__articles {
+  padding-top: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 5rem; }
+  /* line 29, sass/comp/main/article/article.scss */
+  .Main__articles--article {
+    width: 80%;
+    height: 120px;
+    position: relative;
+    background-color: rgba(242, 242, 242, 0.2);
+    position: relative;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.22);
+    border-radius: 15px;
+    padding: 5px 10px;
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center; }
+    /* line 41, sass/comp/main/article/article.scss */
+    .Main__articles--article a {
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: #F49719;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 700; }
+    /* line 54, sass/comp/main/article/article.scss */
+    .Main__articles--article-X {
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      background-color: #066381; }
+    /* line 60, sass/comp/main/article/article.scss */
+    .Main__articles--article-content {
+      display: flex;
+      align-items: center; }
+      /* line 63, sass/comp/main/article/article.scss */
+      .Main__articles--article-content img {
+        height: 100px;
+        margin-right: 15px; }
+      /* line 67, sass/comp/main/article/article.scss */
+      .Main__articles--article-content-info {
+        width: 60%;
+        box-sizing: border-box; }
+        /* line 70, sass/comp/main/article/article.scss */
+        .Main__articles--article-content-info h3 {
+          font-size: 1.5rem;
+          font-weight: 400; }
+        /* line 74, sass/comp/main/article/article.scss */
+        .Main__articles--article-content-info h4 {
+          font-size: 1rem;
+          font-weight: 400;
+          padding-bottom: 0.5rem; }
+        /* line 79, sass/comp/main/article/article.scss */
+        .Main__articles--article-content-info h6 {
+          padding-top: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding-bottom: 0.5rem;
+          color: #066381; }
+  /* line 89, sass/comp/main/article/article.scss */
+  .Main__articles svg {
+    width: 30px;
+    position: absolute;
+    top: -10px;
+    right: -10px; }
+    /* line 96, sass/comp/main/article/article.scss */
+    .Main__articles svg path {
+      fill: #066381; }
+  /* line 100, sass/comp/main/article/article.scss */
+  .Main__articles--sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 0 20px;
+    box-sizing: border-box; }
+    /* line 108, sass/comp/main/article/article.scss */
+    .Main__articles--sub h6 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #066381;
+      margin-top: 1rem; }
+    /* line 115, sass/comp/main/article/article.scss */
+    .Main__articles--sub-op {
+      display: flex;
+      justify-content: space-evenly; }
+      /* line 116, sass/comp/main/article/article.scss */
+      .Main__articles--sub-op a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white; }
+      /* line 122, sass/comp/main/article/article.scss */
+      .Main__articles--sub-op h5 {
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #066381; }

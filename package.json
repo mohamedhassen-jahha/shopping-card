@@ -1,0 +1,15 @@
+{
+    "name": "checkpoint-dom",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass sass/main.scss main.css -watch"
+    },
+    "author": "Med Hassen JAHHA",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^6.0.1",
+        "node.js": "0.0.1-security"
+    }
+}

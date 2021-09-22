@@ -1,0 +1,71 @@
+.headerNav {
+    width: 100%;
+    padding: 1.5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 55px -28px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    & img {
+        height: 20px;
+        align-self: center;
+    }
+    &__search {
+        min-width: fit-content;
+        width: 40%;
+        display: flex;
+        & input {
+            padding: 0.6rem 10px;
+            width: 80%;
+            border-radius: 0.5rem 0 0 0.5rem;
+            border: 0.1rem solid #DBDBDB;
+            border-right: 0;
+            color: #acaaaa;
+        }
+        & a {
+            display: flex;
+            width: 20%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 0.5rem 0.5rem 0;
+            background-color: #F49719;
+            color: white;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    &__user {
+        position: relative;
+        width: auto;
+        display: flex;
+        & svg {
+            height: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            & path {
+                fill: #066381;
+            }
+        }
+        &--name {
+            text-align: right;
+            font-size: 1.2rem;
+            width: 50%;
+            margin: 0 10px 0 10px;
+            color: #066381;
+            font-size: 300;
+        }
+        &--tag {
+            background-color: #F49719;
+            width: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    }
+}
